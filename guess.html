@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guess Game - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e3f2fd; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 80%; font-size: 16px; }
+button { padding: 12px 25px; background: #1976d2; color: white; border: none; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Guess Game</h1>
+<p>Project 6 - By Ismail</p>
+<p>Guess Number 1 to 10:</p>
+<input type="number" id="g" placeholder="Enter Number">
+<br>
+<button onclick="check()">Guess</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function check(){
+let g = Number(document.getElementById("g").value);
+if(g === 5) document.getElementById("r").innerText = "You Win! 🎉";
+else document.getElementById("r").innerText = "Try Again! 😅";
+}
+</script>
+</body>
+</html>
