@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To-Do List - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e8f5e9; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 70%; font-size: 16px; }
+button { padding: 10px 15px; background: #2e7d32; color: white; border: none; border-radius: 8px; font-size: 16px; }
+li { text-align: left; font-size: 17px; padding: 5px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>To-Do List</h1>
+<p>Project 5 - By Ismail</p>
+<input type="text" id="task" placeholder="Write Task">
+<button onclick="add()">Add</button>
+<ul id="list"></ul>
+</div>
+<script>
+function add(){
+let v = document.getElementById("task").value;
+if(!v) return;
+let li = document.createElement("li");
+li.innerText = v;
+li.onclick = function(){ this.style.textDecoration = "line-through"; };
+document.getElementById("list").appendChild(li);
+document.getElementById("task").value = "";
+}
+</script>
+</body>
+</html>
