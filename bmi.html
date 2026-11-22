@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI Calculator - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e0f2f1; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 80%; margin: 5px; font-size: 16px; }
+button { padding: 12px 25px; background: #00796b; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>BMI Calculator</h1>
+<p>Project 3 - By Ismail</p>
+<input type="number" id="w" placeholder="Weight in KG">
+<input type="number" id="h" placeholder="Height in Meter">
+<br><br>
+<button onclick="calc()">Calculate</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function calc(){
+let w = Number(document.getElementById("w").value);
+let h = Number(document.getElementById("h").value);
+let bmi = w / (h * h);
+document.getElementById("r").innerText = "Your BMI: " + bmi.toFixed(1);
+}
+</script>
+</body>
+</html>
