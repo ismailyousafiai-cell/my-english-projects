@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dice Roller - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fff3e0; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #ef6c00; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Dice Roller 🎲</h1>
+<p>Project 9 - By Ismail</p>
+<button onclick="roll()">Roll Dice</button>
+<h1 id="r" style="font-size: 50px;">🎲</h1>
+</div>
+<script>
+function roll(){
+let n = Math.floor(Math.random()*6) + 1;
+document.getElementById("r").innerText = "Dice: " + n;
+}
+</script>
+</body>
+</html>
