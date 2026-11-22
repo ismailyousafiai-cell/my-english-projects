@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expense Calculator - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fff8e1; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 80%; font-size: 16px; }
+button { padding: 12px 25px; background: #ff8f00; color: white; border: none; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Expense Calculator</h1>
+<p>Project 4 - By Ismail</p>
+<p>Enter Salary (£):</p>
+<input type="number" id="s" placeholder="3250">
+<br>
+<button onclick="calc()">Calculate</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function calc(){
+let s = Number(document.getElementById("s").value);
+let home = 750;
+let expense = 740;
+let savings = s - home - expense;
+document.getElementById("r").innerText = "Sav
