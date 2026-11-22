@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notes - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fffde7; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+textarea { width: 90%; height: 100px; padding: 10px; font-size: 16px; }
+button { padding: 12px 25px; background: #fbc02d; color: black; border: none; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>My Notes 📝</h1>
+<p>Project 12 - By Ismail</p>
+<textarea id="note" placeholder="Write Your Note..."></textarea>
+<br>
+<button onclick="save()">Save Note</button>
+<p id="msg"></p>
+</div>
+<script>
+function save(){
+let n = document.getElementById("note").value;
+if(!n){ document.getElementById("msg").innerText = "Please Write Something!"; return; }
+localStorage.setItem("note", n);
+document.getElementById("msg").innerText = "Saved
