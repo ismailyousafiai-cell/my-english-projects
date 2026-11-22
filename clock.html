@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clock - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fce4ec; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Clock</h1>
+<p>Project 7 - By Ismail</p>
+<h1 id="time" style="font-size: 40px;">00:00:00</h1>
+<p>London Time: 5 Hours Behind Jhelum</p>
+</div>
+<script>
+function update(){
+document.getElementById("time").innerText = new Date().toLocaleTimeString();
+}
+setInterval(update, 1000);
+update();
+</script>
+</body>
+</html>
