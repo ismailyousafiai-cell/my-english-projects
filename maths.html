@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Quiz - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e3f2fd; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 20px; margin: 5px; background: #1976d2; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Math Quiz ➕</h1>
+<p>Project 40 - By Ismail</p>
+<p>What is 5 + 7?</p>
+<button onclick="check(12)">12</button>
+<button onclick="check(11)">11</button>
+<button onclick="check(13)">13</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function check(ans){
+if(ans === 12) document.getElementById("r").innerText = "Correct! 🎉";
+else document.getElementById("r").innerText = "Wrong! Try Again!";
+}
+</script>
+</body>
+</html>
