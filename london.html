@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>London Time - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e3f2fd; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #1976d2; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>London Time 🇬🇧</h1>
+<p>Project 26 - By Ismail</p>
+<p>Jhelum Time:</p>
+<h2 id="pk"></h2>
+<p>London Time (5 Hours Behind):</p>
+<h2 id="uk"></h2>
+<button onclick="update()">Check Time</button>
+</div>
+<script>
+function update(){
+let now = new Date();
+document.getElementById("pk").innerText = now.toLocaleTimeString();
+let uk = new Date(now.getTime() - 5*60*60*1000);
+document.getElementById("uk").innerText = uk.toLocaleTimeString();
+}
+update();
+</script>
+</body>
+</html>
