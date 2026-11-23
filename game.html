@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fce4ec; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 20px; margin: 5px; background: #e91e63; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Rock Paper Scissors</h1>
+<p>Project 18 - By Ismail</p>
+<button onclick="play('Rock')">Rock</button>
+<button onclick="play('Paper')">Paper</button>
+<button onclick="play('Scissors')">Scissors</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function play(user){
+let choices = ["Rock","Paper","Scissors"];
+let comp = choices[Math.floor(Math.random()*3)];
+if(user === comp) document.getElementById("r").innerText = "Draw! Computer: " + comp;
+else if((user==="Rock"&&comp==="Scissors")||(user==="Paper"&&comp==="Rock")||(user==="Scissors"&&comp==="Paper")) document.getElementById("r").innerText = "You Win! Computer: " + comp;
+else document.getElementById("r").innerText = "You Lose! Computer: " + comp;
+}
+</script>
+</body>
+</html>
