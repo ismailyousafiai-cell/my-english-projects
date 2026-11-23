@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EMI Calculator - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fff8e1; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 80%; margin: 5px; font-size: 16px; }
+button { padding: 12px 25px; background: #ff8f00; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>EMI Calculator</h1>
+<p>Project 27 - By Ismail</p>
+<input type="number" id="loan" placeholder="Loan Amount">
+<input type="number" id="months" placeholder="Months - 12">
+<br><br>
+<button onclick="calc()">Calculate</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function calc(){
+let loan = Number(document.getElementById("loan").value);
+let m = Number(document.getElementById("months").value);
+let emi = loan / m;
+document.getElementById("r").innerText = "Monthly EMI: £" + emi.toFixed(2);
+}
+</script>
+</body>
+</html>
