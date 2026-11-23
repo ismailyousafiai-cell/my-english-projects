@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marks Calculator - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e8f5e9; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 80%; margin: 5px; font-size: 16px; }
+button { padding: 12px 25px; background: #2e7d32; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Marks Calculator</h1>
+<p>Project 20 - By Ismail</p>
+<input type="number" id="ninth" placeholder="9th Marks - 332">
+<input type="number" id="tenth" placeholder="10th Marks - 505">
+<br><br>
+<button onclick="calc()">Calculate Total</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function calc(){
+let a = Number(document.getElementById("ninth").value);
+let b = Number(document.getElementById("tenth").value);
+let total = a + b;
+document.getElementById("r").innerText = "Total: " + total + " / 1200";
+}
+</script>
+</body>
+</html>
