@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Love Calculator - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fce4ec; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 80%; margin: 5px; font-size: 16px; }
+button { padding: 12px 25px; background: #e91e63; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Love Calculator ❤️</h1>
+<p>Project 25 - By Ismail</p>
+<input type="text" id="n1" placeholder="Your Name">
+<input type="text" id="n2" placeholder="Partner Name">
+<br><br>
+<button onclick="calc()">Calculate</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function calc(){
+let n = Math.floor(Math.random()*100) + 1;
+document.getElementById("r").innerText = "Love: " + n + "%";
+}
+</script>
+</body>
+</html>
