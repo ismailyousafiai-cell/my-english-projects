@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Diary - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fffde7; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+textarea { width: 90%; height: 120px; padding: 10px; font-size: 16px; }
+button { padding: 12px 25px; background: #fbc02d; color: black; border: none; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>My Diary 📔</h1>
+<p>Project 29 - By Ismail</p>
+<textarea id="d" placeholder="Write Your Diary Today..."></textarea>
+<br>
+<button onclick="save()">Save Diary</button>
+<p id="msg"></p>
+</div>
+<script>
+function save(){
+let v = document.getElementById("d").value;
+localStorage.setItem("diary", v);
+document.getElementById("msg").innerText = "Diary Saved! ✅";
+}
+let old = localStorage.getItem("diary");
+if(old) document.getElementById("d").value = old;
+</script>
+</body>
+</html>
