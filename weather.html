@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e0f7fa; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #00838f; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Weather App ☀️</h1>
+<p>Project 17 - By Ismail</p>
+<p>Select City:</p>
+<button onclick="show('Jhelum')">Jhelum</button>
+<button onclick="show('Leeds')">Leeds</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function show(city){
+if(city === 'Jhelum') document.getElementById("r").innerText = "Jhelum: 25°C - Sunny";
+else document.getElementById("r").innerText = "Leeds: 10°C - Cloudy";
+}
+</script>
+</body>
+</html>
