@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weight Converter - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e0f2f1; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; font-size: 16px; width: 80%; }
+button { padding: 12px 25px; background: #00796b; color: white; border: none; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>KG to Pounds ⚖️</h1>
+<p>Project 38 - By Ismail</p>
+<p>Enter KG:</p>
+<input type="number" id="kg" placeholder="70">
+<br>
+<button onclick="convert()">Convert</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function convert(){
+let kg = Number(document.getElementById("kg").value);
+let pounds = (kg * 2.2).toFixed(1);
+document.getElementById("r").innerText = kg + " KG = " + pounds + " Pounds";
+}
+</script>
+</body>
+</html>
