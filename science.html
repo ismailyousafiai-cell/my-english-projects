@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science Quiz - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e0f7fa; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 20px; margin: 5px; background: #00838f; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Science Quiz 🔬</h1>
+<p>Project 30 - By Ismail</p>
+<p>What is H2O?</p>
+<button onclick="check('Water')">Water</button>
+<button onclick="check('Fire')">Fire</button>
+<button onclick="check('Air')">Air</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function check(ans){
+if(ans === 'Water') document.getElementById("r").innerText = "Correct! 🎉";
+else document.getElementById("r").innerText = "Wrong! Try Again!";
+}
+</script>
+</body>
+</html>
