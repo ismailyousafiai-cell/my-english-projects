@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joke Generator - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fff3e0; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #ef6c00; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Joke Generator 😂</h1>
+<p>Project 23 - By Ismail</p>
+<button onclick="joke()">New Joke</button>
+<h2 id="j">Click For Joke!</h2>
+</div>
+<script>
+let jokes = ["Why did the developer go broke? He used up all his cache!", "Why do programmers prefer dark mode? Because light attracts bugs!", "I will go to UK in 2030!"];
+function joke(){
+let r = jokes[Math.floor(Math.random()*jokes.length)];
+document.getElementById("j").innerText = r;
+}
+</script>
+</body>
+</html>
