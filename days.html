@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Days Alive - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e8eaf6; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #1a237e; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Days Alive 🎂</h1>
+<p>Project 39 - By Ismail</p>
+<p>Birthday: 13 Nov 2010</p>
+<button onclick="check()">How Many Days?</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function check(){
+let birth = new Date("2010-11-13");
+let now = new Date();
+let diff = now - birth;
+let days = Math.floor(diff / (1000*60*60*24));
+document.getElementById("r").innerText = days + " Days!";
+}
+check();
+</script>
+</body>
+</
