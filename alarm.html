@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alarm Clock - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fff3e0; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; font-size: 18px; }
+button { padding: 12px 25px; background: #ef6c00; color: white; border: none; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Alarm Clock ⏰</h1>
+<p>Project 37 - By Ismail</p>
+<p>What Time To Wake Up?</p>
+<input type="time" id="time">
+<br>
+<button onclick="set()">Set Alarm</button>
+<h2 id="msg"></h2>
+</div>
+<script>
+function set(){
+let t = document.getElementById("time").value;
+if(!t){ document.getElementById("msg").innerText = "Please Select Time!"; return; }
+document.getElementById("msg").innerText
