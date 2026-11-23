@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UK Countdown - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e3f2fd; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #1976d2; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>UK Countdown 🇬🇧</h1>
+<p>Project 19 - By Ismail</p>
+<p>I Will Go To UK In June 2030!</p>
+<button onclick="check()">How Many Days Left?</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function check(){
+let uk = new Date("2030-06-01");
+let now = new Date();
+let diff = uk - now;
+let days = Math.floor(diff / (1000*60*60*24));
+document.getElementById("r").innerText = days + " Days Left!";
+}
+check();
+</script>
+</body>
+</html>
