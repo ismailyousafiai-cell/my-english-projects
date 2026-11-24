@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Converter - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e3f2fd; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; font-size: 16px; width: 80%; }
+button { padding: 12px 25px; background: #1976d2; color: white; border: none; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Currency Converter 💱</h1>
+<p>Project 47 - By Ismail</p>
+<p>Enter Pounds (£):</p>
+<input type="number" id="p" placeholder="100">
+<br>
+<button onclick="calc()">Convert To PKR</button>
+<h2 id="r"></h2>
+</div>
+<script>
+function calc(){
+let p = Number(document.getElementById("p").value);
+let pkr = p * 370;
+document.getElementById("r").innerText = "£" + p + " = " + pkr
