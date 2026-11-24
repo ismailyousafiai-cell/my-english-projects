@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color Picker - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f5f5f5; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 20px; margin: 5px; border: none; border-radius: 8px; font-size: 16px; color: white; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Color Picker 🎨</h1>
+<p>Project 46 - By Ismail</p>
+<p>Pick Your Favorite Color:</p>
+<button style="background:#e91e63" onclick="pick('#e91e63')">Pink</button>
+<button style="background:#1976d2" onclick="pick('#1976d2')">Blue</button>
+<button style="background:#2e7d32" onclick="pick('#2e7d32')">Green</button>
+<h2 id="r">Your Color Will Show Here!</h2>
+</div>
+<script>
+function pick(color){
+document.getElementById("r").innerText = "You Picked: " + color;
+document.body.style.background = color;
+}
+</script>
+</body>
+</html>
