@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Water Tracker - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e0f7fa; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #00838f; color: white; border: none; border-radius: 8px; font-size: 16px; margin: 5px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Water Tracker 💧</h1>
+<p>Project 44 - By Ismail</p>
+<p>How Many Glasses Today?</p>
+<h1 id="count" style="font-size:50px;">0</h1>
+<button onclick="add()">+1 Glass</button>
+<button onclick="reset()">Reset</button>
+<p id="msg"></p>
+</div>
+<script>
+let c = 0;
+function add(){
+c++;
+document.getElementById("count").innerText = c;
+if(c >= 8) document.getElementById("msg").innerText = "Done! 8 Glasses! 🎉";
+}
+function reset(){
+c = 0;
+document.getElementById("count").innerText = 0;
+document.getElementById("msg").innerText = "";
+}
+</script>
+</body>
+</html>
