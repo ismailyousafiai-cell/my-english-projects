@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Daily Quote - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #f3e5f5; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+button { padding: 12px 25px; background: #8e24aa; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Daily Quote 💡</h1>
+<p>Project 42 - By Ismail</p>
+<button onclick="newQuote()">New Quote</button>
+<h2 id="q">Work Hard, Go To UK!</h2>
+</div>
+<script>
+let quotes = ["Work Hard, Go To UK!", "50 Projects = BJSS Job!", "My Home Will Be On Wembley Road!", "BMW M5 Matte Black - In 2036!", "I Will Get 850 Marks In Matric!"];
+function newQuote(){
+let r = quotes[Math.floor(Math.random()*quotes.length)];
+document.getElement
