@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping List - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #fff8e1; padding: 30px; }
+.box { background: white; padding: 25px; border-radius: 15px; max-width: 400px; margin: auto; }
+input { padding: 10px; width: 70%; font-size: 16px; }
+button { padding: 10px 15px; background: #ff8f00; color: white; border: none; border-radius: 8px; font-size: 16px; }
+li { text-align: left; font-size: 17px; padding: 5px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Shopping List 🛒</h1>
+<p>Project 41 - By Ismail</p>
+<input type="text" id="item" placeholder="What to buy?">
+<button onclick="add()">Add</button>
+<ul id="list"></ul>
+</div>
+<script>
+function add(){
+let v = document.getElementById("item").value;
+if(!v) return;
+let li = document.createElement("li");
+li.innerText = v;
+li.onclick = function(){ this.style.textDecoration = "line-through"; };
+document.getElementById("list").appendChild(li);
+document.getElementById("item").value = "";
+}
+</script>
+</body>
+</html>
