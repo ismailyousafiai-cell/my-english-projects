@@ -1,0 +1,15 @@
+# Expense Calculator - By Ismail - Project 53
+print("My Monthly Expense - UK")
+
+salary = int(input("Enter Salary (£): "))
+home = 750
+expense = 740
+enjoy = 760
+
+savings = salary - home - expense - enjoy
+
+print("Home:", home)
+print("Expense:", expense)
+print("Enjoy:", enjoy)
+print("Savings:", savings)
+print("Total Salary:", salary)
