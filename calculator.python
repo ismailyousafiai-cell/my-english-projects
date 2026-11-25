@@ -1,0 +1,10 @@
+# Calculator - By Ismail - Project 51
+print("My Calculator - Ismail")
+
+a = int(input("Enter First Number: "))
+b = int(input("Enter Second Number: "))
+
+print("Add:", a + b)
+print("Minus:", a - b)
+print("Multiply:", a * b)
+print("Divide:", a / b)
