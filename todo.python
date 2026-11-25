@@ -1,0 +1,14 @@
+# To-Do List - By Ismail - Project 55
+print("My To-Do List")
+
+tasks = []
+
+for i in range(3):
+    task = input("Enter Task: ")
+    tasks.append(task)
+
+print("Your Tasks:")
+for t in tasks:
+    print("-", t)
+
+print("Do These Tasks Today!")
