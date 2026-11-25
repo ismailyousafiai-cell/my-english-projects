@@ -1,0 +1,12 @@
+# Guess Game - By Ismail - Project 54
+import random
+
+print("Guess Game - 1 To 10")
+
+secret = random.randint(1, 10)
+guess = int(input("Guess Number: "))
+
+if guess == secret:
+    print("You Win! Number Was", secret)
+else:
+    print("You Lose! Number Was", secret)
