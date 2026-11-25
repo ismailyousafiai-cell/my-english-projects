@@ -1,0 +1,16 @@
+# Marks Calculator - By Ismail - Project 59
+print("My Matric Marks Calculator")
+
+ninth = int(input("Enter 9th Marks (332): "))
+tenth = int(input("Enter 10th Marks (505): "))
+
+total = ninth + tenth
+percent = (total / 1200) * 100
+
+print("Total:", total, "/ 1200")
+print("Percentage:", round(percent, 1), "%")
+
+if total >= 850:
+    print("850 Done! Great!")
+else:
+    print("Work Hard!")
