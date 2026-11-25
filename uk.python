@@ -1,0 +1,14 @@
+# UK Countdown - By Ismail - Project 60
+from datetime import date
+
+print("UK Countdown!")
+
+today = date.today()
+uk_date = date(2030, 6, 1)
+days = (uk_date - today).days
+
+print("Today Date:", today)
+print("Days Left To UK:", days)
+print("Address: Wembley Road, Beeston, Leeds")
+print("Job: BJSS - £50,000")
+print("InshaAllah I Will Go To UK In 2030!")
