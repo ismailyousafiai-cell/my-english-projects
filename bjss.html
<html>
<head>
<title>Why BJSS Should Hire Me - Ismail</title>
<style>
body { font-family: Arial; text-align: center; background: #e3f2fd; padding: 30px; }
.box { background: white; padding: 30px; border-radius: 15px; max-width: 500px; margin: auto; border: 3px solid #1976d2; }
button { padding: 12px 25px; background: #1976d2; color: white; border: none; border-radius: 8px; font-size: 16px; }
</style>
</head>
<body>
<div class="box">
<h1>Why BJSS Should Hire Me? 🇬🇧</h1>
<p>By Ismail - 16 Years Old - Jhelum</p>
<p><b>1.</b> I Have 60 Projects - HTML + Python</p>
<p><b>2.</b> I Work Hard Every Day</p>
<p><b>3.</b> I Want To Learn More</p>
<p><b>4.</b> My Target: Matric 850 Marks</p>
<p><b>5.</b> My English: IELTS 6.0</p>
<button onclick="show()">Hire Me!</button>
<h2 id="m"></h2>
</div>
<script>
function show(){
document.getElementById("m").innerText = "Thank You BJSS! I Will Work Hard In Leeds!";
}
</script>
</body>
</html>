@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Why BJSS Should Hire Me - Ismail</title>
+<style>
+body { font-family: Arial; text-align: center; background: #e3f2fd; padding: 30px; }
+.box { background: white; padding: 30px; border-radius: 15px; max-width: 500px; margin: auto; border: 3px solid #1976d2; }
+button { padding: 12px 25px; background: #1976d2; color: white; border: none; border-radius: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Why BJSS Should Hire Me? 🇬🇧</h1>
+<p>By Ismail - 16 Years Old - Jhelum</p>
+<p><b>1.</b> I Have 60 Projects - HTML + Python</p>
+<p><b>2.</b> I Work Hard Every Day</p>
+<p><b>3.</b> I Want To Learn More</p>
+<p><b>4.</b> My Target: Matric 850 Marks</p>
+<p><b>5.</b> My English: IELTS 6.0</p>
+<button onclick="show()">Hire Me!</button>
+<h2 id="m"></h2>
+</div>
+<script>
+function show(){
+document.getElementById("m").innerText = "Thank You BJSS! I Will Work Hard In Leeds!";
+}
+</script>
+</body>
+</html>
