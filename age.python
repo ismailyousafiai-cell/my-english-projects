@@ -1,0 +1,9 @@
+# Age Calculator - By Ismail - Project 52
+print("My Age Calculator")
+
+birth_year = int(input("Enter Birth Year (2010): "))
+current_year = 2026
+age = current_year - birth_year
+
+print("Your Age:", age, "Years!")
+print("Birthday: 13 Nov")
